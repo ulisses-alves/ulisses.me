@@ -1,0 +1,16 @@
+.ua-syntax {
+  font: {
+    family: $ua-font-mono;
+    weight: 700
+  }
+
+  .ua-keyword {
+    color: $ua-base0D;
+    font-weight: 700;
+  }
+
+  .ua-var {
+    color: $ua-base08;
+    font-weight: 700;
+  }
+}

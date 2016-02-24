@@ -1,0 +1,26 @@
+ua-header {
+  display: flex;
+  justify-content: center;
+  padding: 2em 0;
+
+  > h1 {
+    color: $ua-base0A;
+    position: relative;
+    text-align: center;
+
+    font: {
+      family: $ua-font-heading;
+      size: 5em;
+    }
+
+    > small {
+      color: $ua-base0E;
+
+      font: {
+        family: $ua-font-mono;
+        size: 0.3em;
+        weight: 700;
+      }
+    }
+  }
+}

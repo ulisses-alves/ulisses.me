@@ -18,10 +18,10 @@ module.exports = function (grunt) {
       build: {
         options: {
           module: 'uaTemplates',
-          standalone: true
+          standalone: true,
+          url: (path) => path.substring(path.lastIndexOf('/') + 1)
         },
-        cwd: 'src/',
-        src: '**/*.html',
+        src: 'src/**/*.html',
         dest: 'bin/ua-templates.js'
       }
     },

@@ -1,0 +1,9 @@
+@import 'ua-nav-item/ua-nav-item';
+
+ua-nav {
+  display: block;
+
+  > nav {
+    padding-left: 2em;
+  }
+}

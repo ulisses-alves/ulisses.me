@@ -1,4 +1,5 @@
 angular.module('ua', [
   'uaTemplates',
-  'uaLayout'
+  'uaLayout',
+  'uaHeader'
 ]);
