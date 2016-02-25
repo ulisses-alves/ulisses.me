@@ -1,0 +1,28 @@
+i,
+.ua-syntax {
+  font: {
+    family: $ua-font-mono;
+    weight: 700;
+    style: normal;
+  }
+
+  &.ua-keyword {
+    color: $ua-base0E;
+  }
+
+  &.ua-entity {
+    color: $ua-base0A;
+  }
+
+  &.ua-function {
+    color: $ua-base0D;
+  }
+
+  &.ua-member {
+    color: $ua-base08;
+  }
+
+  &.ua-string {
+    color: $ua-base0B;
+  }
+}

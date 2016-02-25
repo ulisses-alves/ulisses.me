@@ -1,0 +1,30 @@
+ua-header {
+  display: block;
+  padding: 4rem 0;
+
+  header {
+    padding: 0 10%;
+
+    @include layout-xs {
+      padding: 0 5%;
+    }
+  }
+
+  h1 {
+    font-size: 2em;
+    margin: 0;
+
+    > i.ua-entity {
+      padding: 0 0.2em;
+
+      font: {
+        family: $ua-font-heading;
+        size: 2em;
+      }
+
+      @include layout-xs {
+        display: block;
+      }
+    }
+  }
+}

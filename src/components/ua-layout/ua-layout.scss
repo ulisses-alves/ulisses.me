@@ -1,0 +1,12 @@
+ua-layout, [ua-layout] {
+  background-color: $ua-base01;
+  color: $ua-base07;
+  display: block;
+  margin: 0;
+
+  font: {
+    family: $ua-font-default;
+    size: $ua-font-size;
+    weight: 400;
+  }
+}

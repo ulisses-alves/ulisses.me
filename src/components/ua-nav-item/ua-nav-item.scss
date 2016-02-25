@@ -1,0 +1,40 @@
+ua-nav-item {
+  display: inline-block;
+
+  > a.ua-string {
+    text-decoration: none;
+
+    font: {
+      family: $ua-font-heading;
+      size: 1.4em;
+      weight: 400;
+    }
+
+    &::before, &::after {
+      content: '"';
+    }
+
+    &:hover {
+      background-color: $ua-base02;
+    }
+
+    > span {
+      text-decoration: underline;
+    }
+  }
+
+  &::after {
+    content: ',';
+    margin-left: -0.5em;
+    margin-right: 0.5em;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+
+  @include layout-xs {
+    display: block;
+    margin: 0.1em 0;
+  }
+}

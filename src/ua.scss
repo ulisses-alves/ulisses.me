@@ -1,1 +1,11 @@
-@import 'ua-layout/ua-layout';
+@import 'styles/variables';
+@import 'styles/palettes/eighties';
+@import 'styles/reset';
+@import 'styles/syntax';
+@import 'styles/mixins/layout';
+@import 'components/ua-layout/ua-layout';
+@import 'components/ua-layout-line/ua-layout-line';
+@import 'components/ua-header/ua-header';
+@import 'components/ua-footer/ua-footer';
+@import 'components/ua-nav-item/ua-nav-item';
+@import 'components/ua-nav/ua-nav';

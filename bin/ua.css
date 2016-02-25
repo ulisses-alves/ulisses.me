@@ -1,4 +1,201 @@
+i,
+.ua-syntax {
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+i.ua-keyword,
+.ua-syntax.ua-keyword {
+  color: #cc99cc;
+}
+
+i.ua-entity,
+.ua-syntax.ua-entity {
+  color: #ffcc66;
+}
+
+i.ua-function,
+.ua-syntax.ua-function {
+  color: #6699cc;
+}
+
+i.ua-member,
+.ua-syntax.ua-member {
+  color: #f2777a;
+}
+
+i.ua-string,
+.ua-syntax.ua-string {
+  color: #99cc99;
+}
+
 ua-layout, [ua-layout] {
+  background-color: #393939;
+  color: #f2f0ec;
   display: block;
   margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", helvetica, sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+[ua-layout-line] {
+  padding-left: 1rem;
+  position: relative;
+}
+
+[ua-layout-line]:before {
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d2d2d;
+  border-bottom: 1px solid #393939;
+  box-sizing: border-box;
+  color: #515151;
+  content: attr(ua-layout-line);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 1em;
+  font-family: "Inconsolata", monospace;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+[ua-layout-line]:hover:before {
+  color: #f2f0ec;
+}
+
+ua-header {
+  display: block;
+  padding: 4rem 0;
+}
+
+ua-header header {
+  padding: 0 10%;
+}
+
+@media (max-width: 599px) {
+  ua-header header {
+    padding: 0 5%;
+  }
+}
+
+ua-header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+ua-header h1 > i.ua-entity {
+  padding: 0 0.2em;
+  font-family: "Patua One", courier, serif;
+  font-size: 2em;
+}
+
+@media (max-width: 599px) {
+  ua-header h1 > i.ua-entity {
+    display: block;
+  }
+}
+
+ua-footer {
+  display: block;
+  padding: 4rem 0;
+}
+
+ua-footer footer {
+  padding-left: 10%;
+}
+
+@media (max-width: 599px) {
+  ua-footer footer {
+    padding-left: 5%;
+  }
+}
+
+ua-footer i {
+  font-size: 2em;
+}
+
+ua-nav-item {
+  display: inline-block;
+}
+
+ua-nav-item > a.ua-string {
+  text-decoration: none;
+  font-family: "Patua One", courier, serif;
+  font-size: 1.4em;
+  font-weight: 400;
+}
+
+ua-nav-item > a.ua-string::before, ua-nav-item > a.ua-string::after {
+  content: '"';
+}
+
+ua-nav-item > a.ua-string:hover {
+  background-color: #515151;
+}
+
+ua-nav-item > a.ua-string > span {
+  text-decoration: underline;
+}
+
+ua-nav-item::after {
+  content: ',';
+  margin-left: -0.5em;
+  margin-right: 0.5em;
+}
+
+ua-nav-item:last-child::after {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  ua-nav-item {
+    display: block;
+    margin: 0.1em 0;
+  }
+}
+
+ua-nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+ua-nav > .ua-syntax {
+  padding-left: 15%;
+}
+
+@media (max-width: 599px) {
+  ua-nav > .ua-syntax {
+    padding-left: 0;
+  }
+}
+
+ua-nav nav {
+  padding: 0.1em 0 0.1em 2em;
+}
+
+@media (min-width: 600px) {
+  ua-nav {
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  ua-nav nav {
+    display: inline-block;
+    padding: 0;
+  }
 }
