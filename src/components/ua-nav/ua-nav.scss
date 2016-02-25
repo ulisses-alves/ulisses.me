@@ -1,9 +1,25 @@
-@import 'ua-nav-item/ua-nav-item';
-
 ua-nav {
-  display: block;
+  display: flex;
+  justify-content: center;
 
-  > nav {
-    padding-left: 2em;
+  > .ua-syntax {
+    padding-left: 15%;
+
+    @include layout-xs {
+      padding-left: 0;
+    }
+  }
+
+  nav {
+    padding: 0.1em 0 0.1em 2em;
+  }
+
+  @include layout-gt-xs {
+    justify-content: flex-start;
+
+    nav {
+      display: inline-block;
+      padding: 0;
+    }
   }
 }

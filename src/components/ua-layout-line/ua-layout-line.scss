@@ -1,0 +1,30 @@
+[ua-layout-line] {
+  padding-left: 1rem;
+  position: relative;
+
+  &:before {
+    align-items: center;
+    background-color: $ua-base00;
+    border-bottom: 1px solid $ua-base01;
+    box-sizing: border-box;
+    color: $ua-base02;
+    content: attr(ua-layout-line);
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 1em;
+
+    font: {
+      family: $ua-font-mono;
+      size: 1rem;
+      weight: 700;
+    }
+  }
+
+  &:hover:before {
+    color: $ua-base07;
+  }
+}

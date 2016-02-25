@@ -1,25 +1,29 @@
 ua-header {
-  display: flex;
-  justify-content: center;
-  padding: 2em 0;
+  display: block;
+  padding: 4rem 0;
 
-  > h1 {
-    color: $ua-base0A;
-    position: relative;
-    text-align: center;
+  header {
+    padding: 0 10%;
 
-    font: {
-      family: $ua-font-heading;
-      size: 5em;
+    @include layout-xs {
+      padding: 0 5%;
     }
+  }
 
-    > small {
-      color: $ua-base0E;
+  h1 {
+    font-size: 2em;
+    margin: 0;
+
+    > i.ua-entity {
+      padding: 0 0.2em;
 
       font: {
-        family: $ua-font-mono;
-        size: 0.3em;
-        weight: 700;
+        family: $ua-font-heading;
+        size: 2em;
+      }
+
+      @include layout-xs {
+        display: block;
       }
     }
   }

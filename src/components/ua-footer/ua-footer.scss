@@ -1,0 +1,16 @@
+ua-footer {
+  display: block;
+  padding: 4rem 0;
+
+  footer {
+    padding-left: 10%;
+
+    @include layout-xs {
+      padding-left: 5%;
+    }
+  }
+
+  i {
+    font-size: 2em;
+  }
+}
